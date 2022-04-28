@@ -14,7 +14,11 @@ object LostWithoutMap extends App{
       integer*2
     }
   }
-
   println(maps(List(1,2,3,4,5,6)))
 
+
+
+  def mapping(xs: List[Int]) = {xs.map(n => n *10)}
+
+  println(mapping(List(1,2,3,4,5,6)))
 }
