@@ -10,7 +10,7 @@ It should return true if the string is valid, and false if it's invalid.
  */
 object ValidBraces extends App {
 
-  def validBraces(s: String): Boolean = {
+  def validBraces(s: String): Unit = {
 
 
 
