@@ -11,16 +11,11 @@ object OppositeNum extends App {
 
   def opposite(number: Double): Double = {
 
-    if (number > 0) {
-      -number
-    }
-    else if (number == 0) {
-      number
-    }
-    else if (number < 0) {
-      -number
-    }
-    else (number)
+    if (number > 0) -number
+    else if (number == 0) number
+    else if (number < 0) -number
+    else number
+
 
   }
 
