@@ -11,11 +11,18 @@ object SquareSum extends App{
     if (xs.isEmpty) 0
     else {
     for (n <- xs) yield {
-      if (n > 0) sum += n*n
+      if (n > 0 || n < 0 ) sum += n*n
     }
     }
+
     sum
   }
 
 println(squareSum(List(1,2)))
+
+
+  //much easier answer:
+
+  def squareSums(xs: List[Int]): Int =
+    xs.map(x => x*x).sum
 }
